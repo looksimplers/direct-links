@@ -1,4 +1,4 @@
-# FoF Direct Links
+## FoF Direct Links
 
 This extension adds direct links to various Flarum actions:
 
@@ -13,28 +13,30 @@ Sample url with auto-fill parameters:
 
 `/composer?title=test&primary_tag=general&content=this is some content`
 
-## Installation
+### Installation
 
 ```bash
 composer require fof/direct-links:"*"
 ```
 
-## Updating
+### Updating
 
 ```bash
 composer update fof/direct-links
 php flarum cache:clear
 ```
 
-## Removing
+### Removing
 
 ```bash
 composer remove fof/direct-links
 ```
 
-## Links
+### Links
 
 - [Github](https://github.com/friendsofflarum/direct-links/)
+- [Packagist](https://packagist.org/packages/fof/direct-links)
+- [Discuss](https://discuss.flarum.org/d/34158)
 
-## Credits
+### Credits
 Original author(s): Clark Winkelmann, Zerosonefun
