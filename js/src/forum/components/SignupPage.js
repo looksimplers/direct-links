@@ -2,6 +2,7 @@ import app from 'flarum/forum/app';
 import RedirectToHomeAndOpenModalPage from './RedirectToHomeAndOpenModalPage';
 import SignUpModal from 'flarum/forum/components/SignUpModal';
 import { extend } from 'flarum/common/extend';
+import Stream from 'flarum/common/utils/Stream';
 
 extend(SignUpModal.prototype, 'fields', function (fields) {
   const isOptional = app.forum.data.attributes['fof-doorman.allowPublic'];
