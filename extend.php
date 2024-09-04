@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace FoF\DirectLinks;
+namespace FoF\DirectLinksInvite;
 
 use Flarum\Extend;
 
@@ -18,6 +18,7 @@ return [
         ->js(__DIR__.'/js/dist/forum.js')
         ->route('/login', 'direct-links-login')
         ->route('/signup', 'direct-links-signup')
+        ->route('/signup/{doorkey}', 'direct-links-signup-invite')
         ->route('/forgot', 'direct-links-forgot')
         ->route('/composer', 'direct-links-composer'),
 ];

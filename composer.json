@@ -1,5 +1,5 @@
 {
-    "name": "fof/direct-links",
+    "name": "fof/direct-links-invite",
     "description": "Adds some direct links and composer auto-fill capabilities.",
     "type": "flarum-extension",
     "keywords": [

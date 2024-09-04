@@ -1,5 +1,5 @@
 {
-    "name": "@fof/direct-links",
+    "name": "@fof/direct-links-invite",
     "version": "0.0.0",
     "prettier": "@flarum/prettier-config",
     "dependencies": {

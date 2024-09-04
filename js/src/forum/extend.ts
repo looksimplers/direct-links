@@ -8,6 +8,7 @@ export default [
   new Extend.Routes() //
     .add('directLinksLogin', '/login', LoginPage)
     .add('directLinksSignup', '/signup', SignupPage)
+    .add('directLinksSignupInvite', '/signup/:doorkey', SignupPage)
     .add('directLinksForgot', '/forgot', ForgotPage)
     .add('directLinksComposer', '/composer', ComposerPage),
 ];
