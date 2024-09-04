@@ -14,7 +14,7 @@ export default class SignupPage extends RedirectToHomeAndOpenModalPage {
         const placeholder = isOptional
           ? app.translator.trans('fof-doorman.forum.sign_up.doorman_placeholder_optional')
           : app.translator.trans('fof-doorman.forum.sign_up.doorman_placeholder');
-        this.doorkey = Stream(app.doorkey) || Stream('');
+        this.doorkey = Stream(app.forum.currentRoute.doorkey) || Stream('');
         fields.add(
           'doorkey',
           <div className="Form-group">
