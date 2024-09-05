@@ -1,9 +1,8 @@
 import app from 'flarum/forum/app';
-import RedirectToHomeAndOpenModalPage from './RedirectToHomeAndOpenModalPage';
 import SignUpModal from 'flarum/forum/components/SignUpModal';
 import { extend } from 'flarum/common/extend';
 import Stream from 'flarum/common/utils/Stream';
-
+import Page from 'flarum/common/components/Page';
 export default class SignupPage extends Page {
   oninit(vnode) {
     super.oninit(vnode);
