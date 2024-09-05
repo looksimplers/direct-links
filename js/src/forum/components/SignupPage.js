@@ -21,9 +21,9 @@ export default class SignupPage extends Page {
       );
     });
 
-   setTimeout(() => {
-      m.route.set('/');
-   });
+  //  setTimeout(() => {
+  //     m.route.set('/');
+  //  });
 
     setTimeout(() => app.modal.show(this.createModal()), 1000);
   }
