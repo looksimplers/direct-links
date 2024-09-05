@@ -11,7 +11,8 @@ export default class SignupPage extends Page {
       const placeholder = isOptional
         ? app.translator.trans('fof-doorman.forum.sign_up.doorman_placeholder_optional')
         : app.translator.trans('fof-doorman.forum.sign_up.doorman_placeholder');
-      this.doorkey = Stream(app.doorkey) || Stream('');
+      const params = m.route.param()
+      this.doorkey = Stream(params.doorkey) || Stream('');
       fields.add(
         'doorkey',
         <div className="Form-group">
@@ -20,9 +21,11 @@ export default class SignupPage extends Page {
       );
     });
 
-    m.route.set('/');
+   setTimeout(() => {
+      m.route.set('/');
+   });
 
-    setTimeout(() => app.modal.show(this.createModal()), 1500);
+    setTimeout(() => app.modal.show(this.createModal()), 1000);
   }
   createModal() {
     if (!app.session.user) {
