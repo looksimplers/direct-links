@@ -13,7 +13,8 @@ export default class RedirectToHomeAndOpenModalPage extends Page {
       const placeholder = isOptional
         ? app.translator.trans('fof-doorman.forum.sign_up.doorman_placeholder_optional')
         : app.translator.trans('fof-doorman.forum.sign_up.doorman_placeholder');
-      this.doorkey = Stream(app.doorkey) || Stream('');
+      const params = m.route.param()
+      this.doorkey = Stream(params.doorkey) || Stream('');
       fields.add(
         'doorkey',
         <div className="Form-group">
