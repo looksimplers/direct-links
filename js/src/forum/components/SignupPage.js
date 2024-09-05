@@ -21,15 +21,15 @@ export default class SignupPage extends Page {
       );
     });
 
-  //  setTimeout(() => {
-  //     m.route.set('/');
-  //  });
+  
 
     setTimeout(() => app.modal.show(this.createModal()), 1000);
   }
   createModal() {
     if (!app.session.user) {
-      
+      setTimeout(() => {
+        m.route.set('/');
+      });
       return SignUpModal;
     }
   }
