@@ -32,12 +32,12 @@
     },
     "autoload": {
         "psr-4": {
-            "FoF\\DirectLinks\\": "src/"
+            "FoF\\DirectLinksInvite\\": "src/"
         }
     },
     "extra": {
         "flarum-extension": {
-            "title": "FoF Direct Links",
+            "title": "FoF Direct Links invite",
             "category": "feature",
             "icon": {
                 "name": "fas fa-link",
